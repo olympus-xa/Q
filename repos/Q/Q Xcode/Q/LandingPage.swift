@@ -8,15 +8,27 @@
 import SwiftUI
 
 struct LandingPage: View {
+    @State var search: String = ""
     var body: some View {
         VStack{
             Spacer()
             NavigationView{
-                Form {
-                    Section {
-                        Text("Search restaurants, events, venues, etc.")
-                    }
+                TextField("Search",
+                          text: $search,
+                          prompt: Text("Search for bars, events, ect.")
+                            .foregroundColor(.black)
+                            .font(
+                            Font.custom("Outfit", size: 20)
+                            .weight(.semibold)
+                            )
+                          )
+                .overlay {
+                    RoundedRectangle(cornerRadius: 10)
+                        
+                        .stroke(.blue, lineWidth: 5)
                 }
+                .padding(.horizontal)
+                
                 .padding([.top], 50)
                 .navigationTitle("Current Location")
             }
