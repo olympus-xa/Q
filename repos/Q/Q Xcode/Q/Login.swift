@@ -63,7 +63,7 @@ struct Login: View {
               Text("Sign In")
               .font(.title3)
               .bold()
-              .foregroundColor(.white)
+              .foregroundColor(.red)
                 
             }
             .frame(height: 50)
