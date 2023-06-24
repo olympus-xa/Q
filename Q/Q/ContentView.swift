@@ -15,12 +15,19 @@ struct ContentView: View {
                     .font(.title)
                     .foregroundColor(Color.green)
                     .multilineTextAlignment(.center)
+                
                 Text("Find your LGBTQ+ friendly community.")
                     .font(.title)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
+                
                 NavigationLink(destination: CreateAccount()) {
                     Text("Create Account")
+                }
+                
+                NavigationLink(destination:
+                                Login()) {
+                    Text("Login")
                 }
                 .padding()
             }
@@ -34,3 +41,4 @@ struct ContentView: View {
         }
     }
 }
+

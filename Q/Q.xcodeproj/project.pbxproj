@@ -14,6 +14,7 @@
 		166493232A461BF0000EB2CD /* QTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166493222A461BF0000EB2CD /* QTests.swift */; };
 		1664932D2A461BF0000EB2CD /* QUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1664932C2A461BF0000EB2CD /* QUITests.swift */; };
 		1664932F2A461BF0000EB2CD /* QUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1664932E2A461BF0000EB2CD /* QUITestsLaunchTests.swift */; };
+		166C95E62A466536008C41BE /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C95E52A466536008C41BE /* Login.swift */; };
 		167261FF2A462FE9008973DE /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167261FE2A462FE9008973DE /* CreateAccount.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		166493282A461BF0000EB2CD /* QUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1664932C2A461BF0000EB2CD /* QUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QUITests.swift; sourceTree = "<group>"; };
 		1664932E2A461BF0000EB2CD /* QUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		166C95E52A466536008C41BE /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		167261FE2A462FE9008973DE /* CreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 				166493162A461BEF000EB2CD /* Q.entitlements */,
 				166493172A461BEF000EB2CD /* Preview Content */,
 				167261FE2A462FE9008973DE /* CreateAccount.swift */,
+				166C95E52A466536008C41BE /* Login.swift */,
 			);
 			path = Q;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				166493132A461BEB000EB2CD /* ContentView.swift in Sources */,
 				167261FF2A462FE9008973DE /* CreateAccount.swift in Sources */,
 				166493112A461BEB000EB2CD /* QApp.swift in Sources */,
+				166C95E62A466536008C41BE /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
