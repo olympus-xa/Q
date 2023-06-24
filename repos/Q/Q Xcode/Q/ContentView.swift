@@ -47,7 +47,7 @@ struct ContentView: View {
                         .foregroundColor(Color.white)
 
                 }
-                NavigationLink(destination: LadingPage()) {
+                NavigationLink(destination: LandingPage()) {
                     Text("CONTINUE AS GUEST")
                       .font(
                         Font.custom("Outfit", size: 12)
