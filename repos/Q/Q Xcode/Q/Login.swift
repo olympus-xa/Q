@@ -21,10 +21,17 @@ struct Login: View {
             
             TextField("Name",
                       text: $name,
-                      prompt: Text("Username").foregroundColor(.blue))
+                      prompt: Text("Username")
+                        .foregroundColor(.black)
+                        .font(
+                        Font.custom("Outfit", size: 20)
+                        .weight(.semibold)
+                        )
+)
             .padding(6)
             .overlay {
                 RoundedRectangle(cornerRadius: 10)
+                    
                     .stroke(.blue, lineWidth: 5)
             }
             .padding(.horizontal)
@@ -33,26 +40,39 @@ struct Login: View {
             HStack {
                 Group {
                     if showPassword {
-                        TextField("Password", // how to create a secure text field
+                        TextField("Password",
                                     text: $password,
-                                    prompt: Text("Password").foregroundColor(.red)) // How to change the color of the TextField Placeholder
+                                    prompt: Text("Password")
+                                        .foregroundColor(.black)
+                                        .font(
+                                        Font.custom("Outfit", size: 20)
+                                        .weight(.semibold)
+                                        )
+                )
+                        
                     } else {
-                        SecureField("Password", // how to create a secure text field
+                        SecureField("Password",
                                     text: $password,
-                                    prompt: Text("Password").foregroundColor(.red)) // How to change the color of the TextField Placeholder
+                                    prompt: Text("Password")
+                                        .foregroundColor(.black)
+                                        .font(
+                                        Font.custom("Outfit", size: 20)
+                                        .weight(.semibold)
+                                        )
+                )
                     }
                 }
                 .padding(6)
                 .overlay {
                     RoundedRectangle(cornerRadius: 10)
-                        .stroke(.red, lineWidth: 5) // How to add rounded corner to a TextField and change it colour
+                        .stroke(.blue, lineWidth: 5)
                 }
 
-                Button { // add this new button
+                Button {
                     showPassword.toggle()
                 } label: {
                     Image(systemName: showPassword ? "eye.slash" : "eye")
-                        .foregroundColor(.red)
+                        .foregroundColor(.black)
                 }
 
             }.padding(.horizontal)
@@ -61,9 +81,12 @@ struct Login: View {
               print("do login action")
             } label: {
               Text("Sign In")
-              .font(.title3)
+                    .font(
+                    Font.custom("Outfit", size: 25)
+                    .weight(.semibold)
+                    )
               .bold()
-              .foregroundColor(.red)
+              .foregroundColor(.blue)
                 
             }
             .frame(height: 50)
@@ -73,6 +96,7 @@ struct Login: View {
             .padding(.horizontal)
             Spacer()
         }
+        
     }
 }
 
