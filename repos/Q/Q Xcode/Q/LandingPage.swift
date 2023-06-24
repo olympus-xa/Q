@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct LandingPage: View {
     var body: some View {
         VStack{
@@ -21,7 +20,9 @@ struct LandingPage: View {
                 .padding([.top], 50)
                 .navigationTitle("Current Location")
             }
+            
             Text("Trending Near You")
+            
             ScrollView(.horizontal){
                 HStack(spacing: 20) {
                     ForEach(0..<10) {
@@ -43,14 +44,29 @@ struct LandingPage: View {
                             .frame(width: 300, height: 200)
                             .background(.blue)
                     }
-                    
+
                 }
                 
             }
-            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label Content@*/Text("Navigate")/*@END_MENU_TOKEN@*/
+            HStack{
+                NavigationLink(destination: Create()) {
+                    Text("Create")
+                        .foregroundColor(.white)
+                }
+                NavigationLink(destination: Notifications()){
+                    Text("Notifications")
+                        .foregroundColor(.white)
+                        .padding(20)
+                }
+                NavigationLink(destination: MyProfile()){
+                    Text("My Profile")
+                        .foregroundColor(.white)
+                }
+            
             }
-            }
+            .frame(maxWidth:999999, maxHeight:50)
+            .background(.blue)
+        }
         }
     }
 

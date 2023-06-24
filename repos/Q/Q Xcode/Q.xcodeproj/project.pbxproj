@@ -18,6 +18,11 @@
 		166C965D2A473B97008C41BE /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C965C2A473B97008C41BE /* CreateAccount.swift */; };
 		166C965F2A473E77008C41BE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166C965E2A473E77008C41BE /* Launch Screen.storyboard */; };
 		166C96642A476DDE008C41BE /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C96632A476DDE008C41BE /* LandingPage.swift */; };
+		166C96662A47876D008C41BE /* Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C96652A47876D008C41BE /* Create.swift */; };
+		166C96682A478846008C41BE /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C96672A478846008C41BE /* Notifications.swift */; };
+		166C966A2A4788B1008C41BE /* MyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C96692A4788B1008C41BE /* MyProfile.swift */; };
+		166C966C2A4790AC008C41BE /* Buisness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C966B2A4790AC008C41BE /* Buisness.swift */; };
+		166C966E2A479221008C41BE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166C966D2A479221008C41BE /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		166C965E2A473E77008C41BE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		166C96602A473F36008C41BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		166C96632A476DDE008C41BE /* LandingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		166C96652A47876D008C41BE /* Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Create.swift; sourceTree = "<group>"; };
+		166C96672A478846008C41BE /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		166C96692A4788B1008C41BE /* MyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfile.swift; sourceTree = "<group>"; };
+		166C966B2A4790AC008C41BE /* Buisness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buisness.swift; sourceTree = "<group>"; };
+		166C966D2A479221008C41BE /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,13 +115,18 @@
 			children = (
 				166C96602A473F36008C41BE /* Info.plist */,
 				166C96302A473AEB008C41BE /* QApp.swift */,
-				166C965C2A473B97008C41BE /* CreateAccount.swift */,
-				166C965A2A473B5A008C41BE /* Login.swift */,
-				166C96322A473AEB008C41BE /* ContentView.swift */,
-				166C96342A473AEE008C41BE /* Assets.xcassets */,
 				166C965E2A473E77008C41BE /* Launch Screen.storyboard */,
+				166C96322A473AEB008C41BE /* ContentView.swift */,
+				166C965A2A473B5A008C41BE /* Login.swift */,
+				166C965C2A473B97008C41BE /* CreateAccount.swift */,
 				166C96632A476DDE008C41BE /* LandingPage.swift */,
+				166C96652A47876D008C41BE /* Create.swift */,
+				166C966D2A479221008C41BE /* Event.swift */,
+				166C966B2A4790AC008C41BE /* Buisness.swift */,
+				166C96672A478846008C41BE /* Notifications.swift */,
+				166C96342A473AEE008C41BE /* Assets.xcassets */,
 				166C96362A473AEE008C41BE /* Preview Content */,
+				166C96692A4788B1008C41BE /* MyProfile.swift */,
 			);
 			path = Q;
 			sourceTree = "<group>";
@@ -273,8 +288,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				166C965B2A473B5A008C41BE /* Login.swift in Sources */,
+				166C966A2A4788B1008C41BE /* MyProfile.swift in Sources */,
+				166C96682A478846008C41BE /* Notifications.swift in Sources */,
+				166C966C2A4790AC008C41BE /* Buisness.swift in Sources */,
+				166C966E2A479221008C41BE /* Event.swift in Sources */,
 				166C96642A476DDE008C41BE /* LandingPage.swift in Sources */,
 				166C96332A473AEB008C41BE /* ContentView.swift in Sources */,
+				166C96662A47876D008C41BE /* Create.swift in Sources */,
 				166C96312A473AEB008C41BE /* QApp.swift in Sources */,
 				166C965D2A473B97008C41BE /* CreateAccount.swift in Sources */,
 			);
