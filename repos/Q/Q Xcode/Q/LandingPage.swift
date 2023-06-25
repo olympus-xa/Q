@@ -12,7 +12,7 @@ struct LandingPage: View {
     var body: some View {
         VStack{
             //Spacer()
-            NavigationView{
+           NavigationView{
                 TextField("Search",
                           text: $search,
                           prompt: Text("Search for bars, events, ect.")
@@ -84,7 +84,6 @@ struct LandingPage: View {
             .background(.blue)
         }
         }
-    }
 
 struct LandingPage_Previews: PreviewProvider {
     static var previews: some View {

@@ -14,6 +14,8 @@ struct Event: View {
     var isSubmitButtonDisabled: Bool {
         [eventName, address, description].contains(where: \.isEmpty)
     }
+    var age = ["18 and Up", "21 and up", "All Ages"]
+        @State private var selectedAge = "All Ages"
     var body: some View {
         VStack{
             ProgressView(value: 0.8)
