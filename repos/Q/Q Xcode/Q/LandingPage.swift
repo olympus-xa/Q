@@ -11,7 +11,7 @@ struct LandingPage: View {
     @State var search: String = ""
     var body: some View {
         VStack{
-            Spacer()
+            //Spacer()
             NavigationView{
                 TextField("Search",
                           text: $search,
@@ -22,7 +22,7 @@ struct LandingPage: View {
                             .weight(.semibold)
                             )
                           )
-                .padding()
+                .padding(5.0)
                 .overlay {
                     RoundedRectangle(cornerRadius: 10)
                         .stroke(.blue, lineWidth: 5)
