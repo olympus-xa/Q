@@ -9,11 +9,16 @@ import SwiftUI
 
 struct CreateAccount: View {
     @State var name: String = ""
-    
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
-            Spacer() // this use all space available above the TextField
-            
+            Spacer()
+            HStack{
+                Text("Q")
+                  .font(Font.custom("Ramaraja", size: 170))
+                  .foregroundColor(Color.yellow)
+                  .padding()
+                Text("Glad you can join us!")
+            }
             TextField("Name",
                       text: $name,
                       prompt: Text("Name").foregroundColor(.blue))
@@ -23,7 +28,7 @@ struct CreateAccount: View {
                         .stroke(.blue, lineWidth: 2)
                    }
                    .padding(.horizontal)
-            Spacer() // this use all space available
+            Spacer()
         }
         
     }
