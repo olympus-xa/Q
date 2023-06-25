@@ -13,6 +13,9 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 Spacer()
+                Text("Q")
+                  .font(Font.custom("Ramaraja", size: 170))
+                  .foregroundColor(Color.yellow)
                 Text("Create.  Host.  Review.")
                     .font(
                     Font.custom("Outfit", size: 25)

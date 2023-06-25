@@ -18,7 +18,10 @@ struct Login: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
             Spacer()
-            
+            Text("Q")
+              .font(Font.custom("Ramaraja", size: 170))
+              .foregroundColor(Color.yellow)
+              .padding()
             TextField("Name",
                       text: $name,
                       prompt: Text("Username")

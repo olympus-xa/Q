@@ -22,6 +22,7 @@ struct LandingPage: View {
                             .weight(.semibold)
                             )
                           )
+                .padding()
                 .overlay {
                     RoundedRectangle(cornerRadius: 10)
                         
