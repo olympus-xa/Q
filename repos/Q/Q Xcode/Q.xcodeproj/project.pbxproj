@@ -121,9 +121,9 @@
 				166C966D2A479221008C41BE /* Event.swift */,
 				166C966B2A4790AC008C41BE /* Buisness.swift */,
 				166C96672A478846008C41BE /* Notifications.swift */,
+				166C96692A4788B1008C41BE /* MyProfile.swift */,
 				166C96342A473AEE008C41BE /* Assets.xcassets */,
 				166C96362A473AEE008C41BE /* Preview Content */,
-				166C96692A4788B1008C41BE /* MyProfile.swift */,
 			);
 			path = Q;
 			sourceTree = "<group>";

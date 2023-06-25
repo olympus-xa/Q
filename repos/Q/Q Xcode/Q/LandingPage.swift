@@ -22,7 +22,6 @@ struct LandingPage: View {
                             .weight(.semibold)
                             )
                           )
-                .padding()
                 .overlay {
                     RoundedRectangle(cornerRadius: 10)
                         
@@ -43,7 +42,7 @@ struct LandingPage: View {
                             .foregroundStyle(.white)
                             .font(.largeTitle)
                             .frame(width: 300, height: 200)
-                            .background(.blue)
+                            .background(.purple)
                     }
                 }
             }
@@ -55,7 +54,7 @@ struct LandingPage: View {
                             .foregroundStyle(.white)
                             .font(.largeTitle)
                             .frame(width: 300, height: 200)
-                            .background(.blue)
+                            .background(.purple)
                     }
 
                 }
@@ -69,15 +68,19 @@ struct LandingPage: View {
                 NavigationLink(destination: Notifications()){
                     Text("Notifications")
                         .foregroundColor(.white)
-                        .padding(20)
+                        .padding(10)
                 }
                 NavigationLink(destination: MyProfile()){
                     Text("My Profile")
                         .foregroundColor(.white)
+                        .padding(10)
                 }
-            
+                NavigationLink(destination: LandingPage()){
+                    Text("Explore")
+                        .foregroundColor(.white)
+                }
             }
-            .frame(maxWidth:999999, maxHeight:50)
+            .frame(maxWidth:999, maxHeight:50)
             .background(.blue)
         }
         }
